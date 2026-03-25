@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Mustafa Oğuzhan Küçükvar
+N:Küçükvar;Mustafa Oğuzhan;;;
+ORG:RE/MAX Enjoy
+TITLE:Gayrimenkul Danışmanı
+TEL;TYPE=CELL:+905339217071
+EMAIL;TYPE=WORK:oguzhan@remaxenjoy.com.tr
+URL;TYPE=WORK:https://oguzhankucukvar.github.io/kartvizit
+X-SOCIALPROFILE;type=facebook:https://www.facebook.com/oguzhan.kucukvar
+X-SOCIALPROFILE;type=instagram:https://www.instagram.com/oguzhan.kucukvar
+X-SOCIALPROFILE;type=linkedin:https://www.linkedin.com/in/mustafa-o%C4%9Fuzhan-k%C3%BC%C3%A7%C3%BCkvar
+X-SOCIALPROFILE;type=youtube:https://www.youtube.com/@mustafaoguzhankucukvar
+END:VCARD
