@@ -374,14 +374,7 @@
     <div class="remax-badge">RE/MAX ®</div>
   </div>
 
-  <button class="save-btn" onclick="
-    var vcard = 'BEGIN:VCARD\nVERSION:3.0\nFN:Mustafa Oğuzhan Küçükvar\nORG:RE/MAX Enjoy\nTITLE:Gayrimenkul Danışmanı\nTEL;TYPE=CELL:+905339217071\nEMAIL:oguzhan@remaxenjoy.com.tr\nURL:https://www.linkedin.com/in/mustafa-o%C4%9Fuzhan-k%C3%BC%C3%A7%C3%BCkvar\nEND:VCARD';
-    var blob = new Blob([vcard], {type:'text/vcard'});
-    var a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = 'Oguzhan_Kucukvar.vcf';
-    a.click();
-  ">📥 Rehbere Kaydet</button>
+  <a href="https://raw.githubusercontent.com/oguzhankucukvar/kartvizit/main/oguzhan.vcf" class="save-btn">📥 Rehbere Kaydet</a>
 
 </div>
 </body>
