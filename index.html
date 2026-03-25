@@ -374,7 +374,33 @@
     <div class="remax-badge">RE/MAX ®</div>
   </div>
 
-  <a href="https://raw.githubusercontent.com/oguzhankucukvar/kartvizit/main/oguzhan.vcf" class="save-btn">📥 Rehbere Kaydet</a>
+  <button class="save-btn" onclick="
+  var vcf = [
+    'BEGIN:VCARD',
+    'VERSION:3.0',
+    'FN:Mustafa O\u011fuzhan K\u00fc\u00e7\u00fckvar',
+    'N:K\u00fc\u00e7\u00fckvar;Mustafa O\u011fuzhan;;;',
+    'ORG:RE/MAX Enjoy',
+    'TITLE:Gayrimenkul Dan\u0131\u015fman\u0131',
+    'TEL;TYPE=CELL:+905339217071',
+    'EMAIL;TYPE=WORK:oguzhan@remaxenjoy.com.tr',
+    'URL;TYPE=WORK:https://oguzhankucukvar.github.io/kartvizit',
+    'X-SOCIALPROFILE;type=facebook:https://www.facebook.com/oguzhan.kucukvar',
+    'X-SOCIALPROFILE;type=instagram:https://www.instagram.com/oguzhan.kucukvar',
+    'X-SOCIALPROFILE;type=linkedin:https://www.linkedin.com/in/mustafa-oguzhan-kucukvar',
+    'X-SOCIALPROFILE;type=youtube:https://www.youtube.com/@mustafaoguzhankucukvar',
+    'END:VCARD'
+  ].join('\r\n');
+  var blob = new Blob([vcf], {type: 'text/vcard;charset=utf-8'});
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.href = url;
+  a.download = 'Oguzhan_Kucukvar.vcf';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+">📥 Rehbere Kaydet</button>
 
 </div>
 </body>
